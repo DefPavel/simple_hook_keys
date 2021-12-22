@@ -1,6 +1,7 @@
 'use strict';
 const ioHook = require('iohook');
-
+let element = '';
+//const arrayElemet = [];
 ioHook.on('keydown', key => {
   /*
     Вообще нужен Numpad - но у меня его нет =))
@@ -19,8 +20,22 @@ ioHook.on('keydown', key => {
     9 = 10;
     0 = 11;
   */
-  if(key.keycode >= 2 && key.keycode <= 11)
-    console.log(key.keycode);
+  
+  if(key.keycode >= 2 && key.keycode <= 11) {
+
+    element += key.keycode;
+    if(element.length == 8) {
+      console.log(element);
+      // Кодинг
+    }
+    /*arrayElemet.push(key.keycode);
+    if(arrayElemet.length == 8) {
+      //Кодинг
+      console.log(arrayElemet);
+    }
+    */
+  }
+    
 })
 
 ioHook.start();
