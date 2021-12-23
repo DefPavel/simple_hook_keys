@@ -9,6 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "iohook": "0.6.6"
+    "iohook": "0.6.6",
+    "node-gyp": "4.0.0",
+    "node-stringbuilder": "^1.0.0",
+    "rebuild": "^0.1.2"
   }
 }
